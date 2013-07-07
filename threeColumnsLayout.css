@@ -40,6 +40,50 @@ body {
     top: 0;
 }
 
+table.basic_lines {
+    width: 300px;
+    border-top: 3px solid #069;
+    border-collapse: collapse;
+}
+
+table.basic_lines caption {
+    margin-bottom: 6px;
+}
+
+table.basic_lines th {
+    border-bottom: 2px solid #069;
+}
+
+table.basic_lines td {
+    border-bottom: 1px solid #069;
+}
+
+table.basic_lines th, table.basic_lines td {
+    padding: 5px 3px;
+}
+
+table.bars_n_stripes {
+    width: 300px;
+    border-collapse: collapse;
+}
+
+table.bars_n_stripes th {
+    background-color: #cfc;
+}
+
+table.bars_n_stripes td {
+    background-color: #ffc;
+}
+
+table.bars_n_stripes th[scope="col"] {
+    background-color: #9cc;
+}
+
+table.bars_n_stripes td, table.bars_n_stripes th {
+    padding: 3px;
+    border-bottom: 1px solid #069;
+}
+
 #promo {
     width: 170px;
     float: left;
