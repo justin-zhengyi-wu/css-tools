@@ -40,48 +40,51 @@ body {
     top: 0;
 }
 
-table.basic_lines {
-    width: 300px;
-    border-top: 3px solid #069;
+table.tic_tac_toe {
     border-collapse: collapse;
 }
 
-table.basic_lines caption {
-    margin-bottom: 6px;
+table.tic_tac_toe td {
+    border-right: 1px solid #9cc;
+    border-bottom: 1px solid #9cc;
+    text-align: center;
+    padding: 4px 8px;
 }
 
-table.basic_lines th {
-    border-bottom: 2px solid #069;
+table.tic_tac_toe th {
+    border-right: 3px solid #9cc;
+    border-bottom: 1px solid #9cc;
+    text-align: center;
+    padding-right: .3em;
 }
 
-table.basic_lines td {
-    border-bottom: 1px solid #069;
+table.tic_tac_toe th[scope="col"] {
+    border-right: 1px solid #9cc;
+    border-bottom: 3px solid #9cc;
 }
 
-table.basic_lines th, table.basic_lines td {
-    padding: 5px 3px;
+table.tic_tac_toe th[scope="col"]:last-child {
+    border-right: 0;
 }
 
-table.bars_n_stripes {
-    width: 300px;
-    border-collapse: collapse;
+table.tic_tac_toe th[scope="col"]:first-child {
+    border-right: 3px solid #9cc;
 }
 
-table.bars_n_stripes th {
-    background-color: #cfc;
+table.tic_tac_toe th[scope="row"] {
+    text-align: right;
 }
 
-table.bars_n_stripes td {
-    background-color: #ffc;
+table.tic_tac_toe tr:last-child th {
+    border-bottom: 0;
 }
 
-table.bars_n_stripes th[scope="col"] {
-    background-color: #9cc;
+table.tic_tac_toe tr:last-child td {
+    border-bottom: 0;
 }
 
-table.bars_n_stripes td, table.bars_n_stripes th {
-    padding: 3px;
-    border-bottom: 1px solid #069;
+table.tic_tac_toe td:last-child, table.tic_tac_toe th:last-child {
+    border-right: 0;
 }
 
 #promo {
